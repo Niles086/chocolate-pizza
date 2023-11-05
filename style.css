@@ -1,66 +1,97 @@
-body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style the navigation bar */
-  nav ul {
-    background-color: white;
-    color: #fff;
-    position: absolute;
-    padding: 0px;
-    left: 1178px;
-    padding-bottom: 55px;
-    top: 3%;
-  }
-  
-  #headerContainer {
-    display: flex;
-    align-items: center;
-  }
-  #logoText1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    left: 50%;
-  }
 
 
+.centered-image {
+  text-align: center;
+}
+
+.centered-img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 125px;
+}
+.picH1 {
+  position: absolute;
+  top: 90px;
+  left: 26.5%;
+  font-weight: bold; /* Use "font-weight" for bold text */
   
+}
+.image-text {
+  position: absolute;
+  top: 135px;
+  left: 26.5%;
+   color: rgb(202, 199, 199);
+  font-size: small;
+}
+nav ul {
+  background-color: white;
+  color: #fff;
+  position: absolute;
+  padding: 0px;
+  left: 1178px;
+  padding-bottom: 55px;
+  top: 3%;
+}
+@font-face {
+  font-family: 'pacifico';
+  src: url('https://fonts.googleapis.com/css?family=Pacifico:regular');
+}
 #cursive {
+ font-family: 'pacifico';
+ position: absolute;
+  top: 2%; /* Adjust the value to control the vertical position */
+  left: 28.9%;
   font-weight: bold;
+  font-size: larger;
 }
 
 #logoText {
-  font-weight: bold;
+  position: absolute;
+  top: 6%; /* Adjust the value to control the vertical position */
+  left: 28.9%;
+  color: rgb(189, 185, 185);
+  font-size: x-small;
+  font-weight: bolder;
 }
-  
-  .centerText { /* Corrected the class name */
-    margin: 1in; /* Use "in" for inches */
-    text-align: justify; /* Optional: Justify text for better alignment */
-  }
-  
-  #centered-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 815px;
-    position: relative;
-  }
-  
-  .picH1 {
-    position: absolute;
-    top: 0;
-    left: 25.5%;
-    font-weight: bold; /* Use "font-weight" for bold text */
-  }
-  
-  .image-text {
-    position: absolute;
-    top: 0;
-    left: 25.5%;
-    padding-top: 50px;
-    color: rgb(202, 199, 199);
-    font-size: small;
-  }
-  
+
+#headerContainer {
+  position: absolute;
+  left: 26.5%;
+  top: 3.5%;
+}
+nav ul::before {
+  content: "";
+  position: absolute;
+  top: 65%; /* Adjust the position of the line */
+  left: -305%;
+  right: 305%;
+  width: 405%; /* Make it stretch horizontally */
+  border-top: 8px solid #a8a6a69d; /* Border creates the horizontal line */
+  transform: translateY(-50%); /* Center the line vertically */
+  background: linear-gradient(to right, #b3aeae 2px, transparent 2px, transparent 10px);
+}
+@font-face {
+  font-family: 'oswald';
+  src: url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+}
+
+.centerText {
+  text-align: left; /* Align text to the left */
+  max-width: 940px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.centerText p {
+  text-indent: 40px; /* Add left-side indent */
+  margin: 30px 0; /* Add top and bottom margin to create a gap between paragraphs */
+  padding-left: 20px; /* Add left padding for the text within paragraphs */
+}
+figure.list-bg {
+  text-align: center; /* Center the content inside the figure */
+}
+section {
+  text-align: center; /* Center the content within the section */
+}
+footer {
+  text-align: center;
+}
